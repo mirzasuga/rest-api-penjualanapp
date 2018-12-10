@@ -15,11 +15,13 @@ class CreateCustomersTable extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->increments('customer_id');
+            $table->integer('city_id')->unsigned()->index();
             $table->string('name');
             $table->mediumText('address');
             $table->string('phone_number')->unique()->nullable();
             $table->string('city');
             $table->timestamps();
+            $table->foreign('city_id')->references('id')->on('cities');
         });
     }
 

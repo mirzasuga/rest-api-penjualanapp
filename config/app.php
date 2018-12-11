@@ -176,7 +176,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         // Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
-        rizalafani\rajaongkirlaravel\RajaOngkirServiceProvider::class,
+        // rizalafani\rajaongkirlaravel\RajaOngkirServiceProvider::class,
+        Agungjk\Rajaongkir\RajaOngkirServiceProvider::class,
     ],
 
     /*
@@ -227,7 +228,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
-        'RajaOngkir' => rizalafani\rajaongkirlaravel\RajaOngkirFacade::class,
+        // 'RajaOngkir' => rizalafani\rajaongkirlaravel\RajaOngkirFacade::class,
+        'RajaOngkir' => Agungjk\Rajaongkir\RajaOngkirFacade::class,
     ],
 
 ];

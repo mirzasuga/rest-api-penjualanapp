@@ -12,10 +12,10 @@ class CitiesTableSeeder extends Seeder
      */
     public function run()
     {
-      	$data = RajaOngkir::Kota()->all();
+      	$data = RajaOngkir::city();
       	foreach ($data as $kota) {
   			DB::table('cities')->insert([
-  				'name' => $kota['city_name'],
+  				'name' => $kota->city_name,
   			]);
       	}
     }

@@ -4,8 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b3594dd1bec3d1a4ba7b0237a53133f",
+    "content-hash": "49440d40c67c6b5b229e76a160e0df71",
     "packages": [
+        {
+            "name": "agungjk/rajaongkir",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/agungjk/rajaongkir.git",
+                "reference": "280415f91276daec51dd3809ede5dbcfe81a781b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/agungjk/rajaongkir/zipball/280415f91276daec51dd3809ede5dbcfe81a781b",
+                "reference": "280415f91276daec51dd3809ede5dbcfe81a781b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Agungjk\\Rajaongkir\\RajaOngkirServiceProvider"
+                    ],
+                    "aliases": {
+                        "RajaOngkir": "Agungjk\\Rajaongkir\\RajaOngkirFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Agungjk\\Rajaongkir\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agung Jati Kusumo",
+                    "email": "agungjk.social@gmail.com"
+                }
+            ],
+            "description": "Raja Ongkir API Wrapper for Laravel 5",
+            "keywords": [
+                "application programming interface",
+                "laravel",
+                "rajaongkir",
+                "wrapper"
+            ],
+            "time": "2018-02-08T07:32:40+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "1.2.0",
@@ -2289,47 +2341,6 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
-        },
-        {
-            "name": "rizalafani/rajaongkirlaravel",
-            "version": "v1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/rizalafani/rajaongkirlaravel.git",
-                "reference": "19ca5b5cf2a02384019cc4812c9dfe67c4795232"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/rizalafani/rajaongkirlaravel/zipball/19ca5b5cf2a02384019cc4812c9dfe67c4795232",
-                "reference": "19ca5b5cf2a02384019cc4812c9dfe67c4795232",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5"
-            },
-            "type": "package",
-            "autoload": {
-                "psr-4": {
-                    "rizalafani\\rajaongkirlaravel\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ahmad Rizal Afani",
-                    "email": "ahmadrizalafani@gmail.com"
-                }
-            ],
-            "description": "Raja Ongkir API Laravel 5",
-            "keywords": [
-                "application programming interface",
-                "laravel",
-                "rajaongkir"
-            ],
-            "time": "2015-11-08T23:28:56+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
